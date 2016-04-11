@@ -1,0 +1,54 @@
+abbr[title] {
+  text-decoration: none;
+}
+
+footer {
+  padding-bottom: 60px;
+}
+
+.row:nth-child(even) {
+  background-color: #F0F0F0;
+}
+.row.padded {
+  padding: 40px 0;
+}
+.row .row, .row.bg-none {
+  background-color: transparent;
+}
+
+.ul-icon {
+  margin-right: 10px;
+}
+
+.icon-large {
+  line-height: 35px;
+  padding-left: 35px;
+  position: relative;
+}
+.icon-large > h4 {
+  margin: 0;
+  line-height: 35px;
+}
+.icon-large > h4 + p {
+  line-height: 25px;
+}
+.icon-large .fa {
+  font-size: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  top: 5px;
+}
+.icon-large .fa-facebook {
+  color: #3b5998;
+}
+.icon-large .fa-twitter {
+  color: #55acee;
+}
+
+@media (min-width: 991px) {
+  .md-padded {
+    padding: 60px 0;
+  }
+}

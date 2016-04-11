@@ -1,0 +1,53 @@
+abbr[title] {
+	text-decoration: none;
+}
+footer {
+	padding-bottom: 60px;
+}
+.row {
+	&:nth-child(even) {
+		background-color: #F0F0F0;
+	}
+	&.padded {
+		padding: 40px 0;
+	}
+	.row, &.bg-none {
+		background-color: transparent;
+	}
+}
+.ul-icon {
+	margin-right: 10px;
+}
+.icon-large {
+	$icon-size: 25px;
+	$line-height: $icon-size + 10px;
+	line-height: $line-height;
+	padding-left: $line-height;
+	position: relative;
+	> h4 {
+		margin: 0;
+		line-height: $line-height;
+		+ p {
+			line-height: $icon-size;
+		}
+	}
+	.fa {
+		font-size: $icon-size;
+		width: $icon-size;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: $icon-size / 5;
+		&#{'-facebook'} {
+			color: #3b5998;
+		}
+		&#{'-twitter'} {
+			color: #55acee;
+		}
+	}
+}
+@media (min-width: 991px) {
+	.md-padded {
+		padding: 60px 0;
+	}
+}
